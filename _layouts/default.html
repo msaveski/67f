@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Brewing Diary</title>
+  <meta name="description" content="Martin and David's Brewing Adventures">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  -->  
+  <link rel="stylesheet" href="/web_libs/skeleton/normalize.css">
+  <link rel="stylesheet" href="/web_libs/skeleton/skeleton.css">
+  <link rel="stylesheet" href="/web_libs/custom/my_css.css">
+   
+  <script src={{ "/web_libs/js/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/web_libs/icon.png">
+
+</head>
+<body>
+  <div class="container">
+    <!-- Header
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section class="header">
+      <h1>Fulkerson Brewing Adventures</h1>
+      <img class="hero" src="/web_libs/hero.jpg"/>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href={{ "index.html" | prepend: site.baseurl }}>Home</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "index.html" | prepend: site.baseurl }}>Brews</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    {{ content }}
+    
+    <section class="section">
+    </section>
+
+  </div>
+</body>
+</html>

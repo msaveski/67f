@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<!-- Welcome
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="section">
+  <h2 class="section-header">Welcome</h2>
+    After talking about brewing for a year, we finally did it!
+</div>
+
+<!-- List of brews
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="section">
+  <h2 class="section-header">Brews</h2>
+  <ol>
+    {% for item in site.brews %}
+      <li>
+        <a href="{{ item.url }}">{{ item.title }}</a> ({{ item.date | date: '%B %d, %Y' }})
+      </li>
+    {% endfor %}
+  </ol>
+</div>

@@ -20,15 +20,15 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– 
   -->  
-  <link rel="stylesheet" href="/web_libs/skeleton/normalize.css">
-  <link rel="stylesheet" href="/web_libs/skeleton/skeleton.css">
-  <link rel="stylesheet" href="/web_libs/custom/my_css.css">
+  <link rel="stylesheet" href={{ "/web_libs/skeleton/normalize.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/web_libs/skeleton/skeleton.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/web_libs/custom/my_css.css" | prepend: site.baseurl }}>
    
   <script src={{ "/web_libs/js/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="/web_libs/icon.png">
+  <link rel="icon" type="image/png" href={{ "/web_libs/icon.png" | prepend: site.baseurl }}>
 
 </head>
 <body>
@@ -37,7 +37,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section class="header">
       <h1>Fulkerson Brewing Adventures</h1>
-      <img class="hero" src="/web_libs/hero.jpg"/>
+      <img class="hero" src={{"/web_libs/hero.jpg" | prepend: site.baseurl }}/>
     </section>
 
     <div class="navbar-spacer"></div>

@@ -16,7 +16,7 @@ layout: default
   <ol>
     {% for item in site.brews %}
       <li>
-        <a href="{{ item.url }}">{{ item.title }}</a> ({{ item.date | date: '%B %d, %Y' }})
+        <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a> ({{ item.date | date: '%B %d, %Y' }})
       </li>
     {% endfor %}
   </ol>
